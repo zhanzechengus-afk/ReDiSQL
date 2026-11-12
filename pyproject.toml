@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redisql"
+version = "0.1.0"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "torch==2.4.1",
+  "transformers==4.44.2",
+  "accelerate==0.34.2",
+  "sqlglot==25.20.0",
+  "numpy==1.26.4",
+  "PyYAML==6.0.2",
+  "sentencepiece==0.2.0"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+redisql = "redisql.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["redisql*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+
