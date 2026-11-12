@@ -1,0 +1,8 @@
+{
+  "training": {
+    "method": "kid",
+    "warmup_epochs": 10,
+    "selection_start_epoch": 11
+  },
+  "output_dir": "runs/spider_kid"
+}

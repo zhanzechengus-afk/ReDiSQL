@@ -1,0 +1,13 @@
+data:
+  dataset: spider
+  train_path: data/spider/train_spider.json
+  dev_path: data/spider/dev.json
+  tables_path: data/spider/tables.json
+  db_root: data/spider/database
+training:
+  method: redisql
+  seed: 42
+  warmup_epochs: 10
+  selection_start_epoch: 11
+output_dir: runs/spider
+

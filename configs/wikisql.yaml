@@ -1,0 +1,13 @@
+data:
+  dataset: wikisql
+  train_path: data/wikisql/train.jsonl
+  dev_path: data/wikisql/dev.jsonl
+  tables_path: data/wikisql
+  db_root: data/wikisql/databases
+training:
+  method: redisql
+  seed: 42
+  warmup_epochs: 10
+  selection_start_epoch: 11
+output_dir: runs/wikisql
+
