@@ -1,0 +1,8 @@
+{
+  "training": {
+    "execution_filter": false,
+    "warmup_epochs": 10,
+    "selection_start_epoch": 11
+  },
+  "output_dir": "runs/ablations/no_execution_filter"
+}
